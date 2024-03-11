@@ -18,9 +18,9 @@ export default function App() {
           <Route path="/" element={<Layout />} >
             <Route index element={<Home />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/contact' element={<Page title={"Contact"} />} />
             <Route path='/hugo' element={<Home />} />
-            <Route path='/privacy-policy' element={<Contact title={"Privacy Policy"}/>} />
+            <Route path='/privacy-policy' element={<Page title={"Privacy Policy"}/>} />
             <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
